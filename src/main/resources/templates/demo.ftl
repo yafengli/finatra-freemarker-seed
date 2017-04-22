@@ -1,1 +1,6 @@
-<h1>${name!"Not Name!"}</h1>
+<h1>${name!"Not SET Name!"}</h1>
+<ul>
+    <#list persons as t>
+        <li>${t.name}|${t.age}</li>
+    </#list>
+</ul>

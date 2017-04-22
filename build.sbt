@@ -2,7 +2,7 @@ import Build._
 
 lazy val root = (project in file(".")).enablePlugins(SbtDistApp).
   settings(
-    name := "hello",
+    name := "finatra-freemarker-seed",
     organization := "com.example",
     scalaVersion := "2.12.1",
     mainClass := Some("com.example.HelloServerMain"),
