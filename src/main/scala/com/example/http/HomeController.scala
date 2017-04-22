@@ -7,8 +7,6 @@ import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.Controller
 import finatra.freemarker.{Freemarker, FreemarkerConfigurationFactory}
 
-import scala.beans.BeanProperty
-
 @Singleton
 class HomeController @Inject()(service: ExampleService, freemarkerConfigurationFactory: FreemarkerConfigurationFactory) extends Controller {
   get("/ping") { _: Request =>
@@ -29,6 +27,6 @@ class HomeController @Inject()(service: ExampleService, freemarkerConfigurationF
 }
 
 @Freemarker("demo")
-case class DemoView(@BeanProperty name: String, @BeanProperty persons: List[Person])
+case class DemoView(name: String, persons: List[Person])
 
-case class Person(@BeanProperty name: String, @BeanProperty age: Int)
+case class Person(name: String, age: Int)
