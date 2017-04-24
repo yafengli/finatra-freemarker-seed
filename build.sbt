@@ -7,7 +7,7 @@ lazy val root = (project in file(".")).enablePlugins(SbtDistApp).
     scalaVersion := "2.12.1",
     mainClass := Some("com.example.HelloServerMain"),
     libraryDependencies ++= Seq(
-      "com.twitter" %% "finatra-freemarker" % $("finatra"),
+      "greatbit" %% "finatra-freemarker" % $("finatra"),
       "org.freemarker" % "freemarker" % $("freemarker"),      
       "com.twitter" %% "finatra-http" % $("finatra") % "test" classifier "tests",
       "com.twitter" %% "inject-server" % $("finatra") % "test" classifier "tests",
