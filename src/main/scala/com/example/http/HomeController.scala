@@ -22,6 +22,7 @@ class HomeController @Inject()(service: ExampleService, freemarkerConfigurationF
       s"""<h1>Hello ${request.ctx}!</h1>
          |params:${request.params.map { t => t._1 + ":" + t._2 }.mkString("<br/>")}
          |cookies:${request.cookies.map { t => t._1 + ":" + t._2.value }.mkString("<br/>")}
+         |Freemarker:<a href="/demo"> Freemarker Demo Page!</a>
        """.stripMargin)
   }
 }
