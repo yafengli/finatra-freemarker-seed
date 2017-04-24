@@ -6,6 +6,7 @@ lazy val root = (project in file(".")).enablePlugins(SbtDistApp).
     organization := "com.example",
     scalaVersion := "2.12.1",
     mainClass := Some("com.example.HelloServerMain"),
+    resolvers += "my_repo" at "https://dl.bintray.com/yafengli/maven/",
     libraryDependencies ++= Seq(
       "greatbit" %% "finatra-freemarker" % $("finatra"),
       "org.freemarker" % "freemarker" % $("freemarker"),      
