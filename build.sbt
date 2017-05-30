@@ -1,6 +1,6 @@
 import Build._
 
-lazy val root = (project in file(".")).enablePlugins(SbtDistApp).
+lazy val root = (project in file(".")).enablePlugins(JavaAppPackaging).
   settings(
     name := "finatra-freemarker-seed",
     organization := "com.example",
