@@ -4,7 +4,7 @@ lazy val root = (project in file(".")).enablePlugins(JavaAppPackaging).
   settings(
     name := "finatra-freemarker-seed",
     organization := "com.example",
-    scalaVersion := "2.12.2",
+    scalaVersion := "2.13.12",
     mainClass := Some("com.example.HelloServerMain"),
     resolvers += "my_repo" at "https://dl.bintray.com/yafengli/maven/",
     libraryDependencies ++= Seq(
