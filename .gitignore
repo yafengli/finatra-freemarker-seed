@@ -27,6 +27,10 @@ node_modules/
 bower_components/
 spm_modules
 #Eclipse
+.bsp/
+.bloop/
+.vscode/
+.metals/
 .gradle/
 .settings/
 .classpath
